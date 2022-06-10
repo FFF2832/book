@@ -1,0 +1,10 @@
+.pl-150{
+    padding-left: 150px;
+}
+.content{
+    position: relative;
+    height: 600px;
+    width: 1000px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}

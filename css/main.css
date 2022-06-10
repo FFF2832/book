@@ -1,0 +1,130 @@
+.modal-bgc0{
+    background-color: rgba(0,0,0, 0);
+    border: 0px;
+}
+.modal-bgc1{
+	background-color: #8d8a7b;
+}
+.hz-450{
+	height: 450px;
+}	
+.header1::before{
+	content: "";
+    position:absolute;
+    left:0;
+    top:0;
+    left: 10px;
+	top: -20px;
+     /* 先定位左上角 */
+    width: 77px;
+	height: 77px;
+    background-image: url(../image/icon_bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+   
+   
+}
+/* 使用偽元素第一件事，設置 content，即使沒有內容，也必須要設定成空字串 */
+.header1::after{
+	content: "";
+    position:absolute;
+    left:0;
+    top:0;
+    left: 10px;
+	top: -20px;
+    width: 77px;
+	height: 77px;
+    background-image: url(../image/icon1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+  
+}
+.header1 .text{
+    /* outline: 1px solid red; */
+	width: 100%;
+	margin-left: 20px;
+	padding-left: 60px;
+	font-size: 24px;
+	font-weight: 700;
+	border-radius: 10px;
+	background-color: #fff;
+	color: #e20898;
+    
+}
+.header2::before{
+	content: "";
+    position:absolute;
+    left:0;
+    top:0;
+    left: 10px;
+	top: -20px;
+     /* 先定位左上角 */
+    width: 77px;
+	height: 77px;
+    background-image: url(../image/icon_bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+   
+   
+}
+/* 使用偽元素第一件事，設置 content，即使沒有內容，也必須要設定成空字串 */
+.header2::after{
+	content: "";
+    position:absolute;
+    left:0;
+    top:0;
+    left: 10px;
+	top: -20px;
+    width: 77px;
+	height: 77px;
+    background-image: url(../image/icon2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+  
+}
+.header2 .text{
+    /* outline: 1px solid red; */
+	width: 100%;
+	margin-left: 20px;
+	padding-left: 60px;
+	font-size: 24px;
+	font-weight: 700;
+	border-radius: 10px;
+	background-color: #fff;
+	color: #e20898;
+    
+}
+.dialogGame{
+    width: 600px;
+    height: 450px;
+    background-image: url(../image/dg1.png);
+	background-repeat: no-repeat;
+	/* background-position: center center; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+.dialogGame .dialogGameClose{
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0, 0);
+    cursor:pointer;
+}
+.dialogGame .dialogGameTitle{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    font-size: 24px;
+    font-weight: bold;
+    width:calc(100% - 30px);
+    /* 記得要空一格 */
+    text-align: center;
+
+}

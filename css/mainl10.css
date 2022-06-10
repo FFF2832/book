@@ -1,0 +1,298 @@
+
+.nav-mine li{
+    position: relative;
+   
+}
+nav{
+ z-index: 1;
+}
+.nav-mine .nav-link{
+    padding: 0;
+    background-color:rgba(0,0,0,0.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+}
+.nav-mine .active{
+    padding: 0;
+    background-color:rgba(255, 0, 0, 0.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+   
+}
+.bgs{
+    position: fixed;
+    left:0;   
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+.bgs .bg{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transition: all 0.35s;
+    /* 變出來跟變回去 */
+}
+.bgs .bg1{background-image: url(../image/bg1.jpg);}
+.bgs .bg2{background-image: url(../image/bg2.jpg);}
+.bgs .bg3{background-image: url(../image/bg3.jpg);}
+.bgs .bg4{background-image: url(../image/bg4.jpg);}
+.bgs .bg5{background-image: url(../image/bg5.jpg);}
+.bgs .bg6{background-image: url(../image/bg6.jpg);}
+.bgs .active{
+    opacity: 1;
+}
+.article{
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    /* 填好填滿 */
+    background-position: center center;
+}
+
+.article-title{
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    font-size: 100px;
+    color: #fff;
+    opacity:0;
+    transition: all 0.5s;
+    transition-delay:1s ;
+}
+.nav-mine li:nth-child(1):hover::before{
+    content:"1111";
+    position: absolute;
+    right: 20px;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    padding: 3px;
+}
+.nav-mine li:nth-child(2):hover::before{
+    content:"1111";
+    position: absolute;
+    right: 20px;
+    border-radius: 3px;
+    background-color:rgba(0,0,0,0.3);
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    padding: 3px;
+}
+.nav-mine li:nth-child(3):hover::before{
+    content:"1111";
+    position: absolute;
+    right: 20px;
+    background-color:rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-mine li:nth-child(4):hover::before{
+    content:"1111";
+    position: absolute;
+    right: 20px;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    padding: 3px;
+}
+.nav-mine li:nth-child(5):hover::before{
+    content:"888858";
+    position: absolute;
+    right: 20px;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    padding: 3px;
+}
+
+
+
+
+.article-title-active{
+    opacity:1;
+}
+.star2{
+	position: absolute;
+	background-image: url(../image/star2.png);
+	width: 184px;
+	height: 202px;
+	bottom: 90px;
+	left: 60px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	animation-name: star2Ani;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes star2Ani{
+	0%{
+		transform: scale(1);
+		bottom: 90px;
+		opacity: 0.6;
+	}
+	50%{
+		transform: scale(1.5);
+		bottom: 160px;
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1);
+		bottom: 90px;
+		opacity: 0.6;
+	}
+}
+.boxs{
+    position: fixed;
+    left:20px;   
+    bottom: 20px;
+    width: 339px;
+    height: 291px;
+}
+.boxs .box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    /* transition: all 0.35s; */
+    /* 變出來跟變回去 */
+}
+.boxs .box1{background-image: url(../image/box1.png);}
+.boxs .box2{background-image: url(../image/box2.png);}
+.boxs .box3{background-image: url(../image/box3.png);}
+.boxs .box4{background-image: url(../image/box4.png);}
+.boxs .box5{background-image: url(../image/box5.png);}
+.boxs .box6{background-image: url(../image/box6.png);}
+.boxs .active{
+    opacity: 1;
+}
+.ball{
+    position: absolute;
+    background-image: url(../image/ball.png);
+    width: 161px;
+    height: 162px;
+    bottom:130px;
+    left:60px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation-name:ballAni ;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes ballAni{
+    0%{
+        bottom:130px;
+        opacity: 0.5;
+    }
+    50%{
+        bottom:170px;
+        opacity: 1;
+    }
+    100%{
+        bottom:130px;
+        opacity: 0.5;
+    }
+}
+
+.light{
+    position: absolute;
+    width: 252px;
+    height: 283px;
+    bottom: 112px;
+    left: 15px;
+    background-image: url(../image/light.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* 單一張圖要加no repeat */
+    animation-name:lightAni ;
+    animation-duration: 1s;
+    /* 播放一次就停 */
+    animation-iteration-count: infinite;
+}
+
+@keyframes lightAni{
+    0%{
+    /* 往上長 */
+    /* 有寫的指令每個都要寫 */
+    transform: scaleY(1);
+    opacity:0.6 ;
+    }
+    50%{
+    transform: scaleY(1.5);
+    opacity:1;
+    }
+    100%{
+    transform: scaleY(1); 
+    opacity:0.6 ;  
+    }
+}
+.boxFront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../image/boxFront.png);
+}
+.star1{
+	position: absolute;
+	background-image: url(../image/star1.png);
+	width: 243px;
+	height: 187px;
+	bottom: 90px;
+	left: 60px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	animation-name: star1Ani;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+@keyframes star1Ani{
+	0%{
+		transform: scale(1);
+		bottom: 90px;
+		opacity: 0.6;
+	}
+	50%{
+		transform: scale(1.5);
+		bottom: 110px;
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1);
+		bottom: 90px;
+		opacity: 0.6;
+	}
+}
+
+
+footer{
+    background-color: #363533;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+  }
